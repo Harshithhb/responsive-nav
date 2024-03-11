@@ -1,0 +1,77 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  
+}
+.app {
+  background-color: navy;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo img {
+  max-width: 50px;
+  margin-left: 75px; 
+  /* Adjust the size of your dummy icon */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .visible {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
